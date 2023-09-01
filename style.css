@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #0984e3;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.box {
+    width: 420px;
+    height: 550px;
+    background-color: #f5f6fa;
+    border-radius: 12px;
+}
+
+.mini-profile-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.m {
+    display: flex;
+    align-items: center;
+}
+
+#profile {
+    width: 45px;
+    padding: 5px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-left: 7px;
+}
+
+.main-details h3 {
+    font-size: 16px;
+    padding: 0 25px 5px 0;
+}
+
+.main-details h3 a {
+    text-decoration: none;
+    color: #0984e3;
+    padding-left: 10px;
+}
+
+.main-details h3 a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.main-details span {
+    font-size: 15px;
+}
+
+.main-details span:hover {
+    text-decoration: underline;
+}
+
+.main-details .fa-earth-americas {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.n {
+    padding-right: 22px;
+}
+
+.n #dots {
+    font-size: 20px;
+    margin-right: 18px;
+}
+
+.fa-xmark {
+    font-size: 22px;
+}
+
+.description {
+    width: 90%;
+    max-width: 520px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 23px;
+}
+
+.image-box {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 10px 0;
+}
+
+.image-box #img {
+    width: 100%;
+    height: 110%;
+    transition: 0.2s ease-in-out;
+    border-radius: 3px;
+}
+
+#img:hover {
+    transform: scale(1.01);
+}
+
+.line {
+    width: 100%;
+    height: 1.5px;
+    background-color: gray;
+    margin-top: 25px;
+}
+
+.main-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.lord {
+    display: flex;
+    align-items: center;
+}
+
+.icon,
+.icon2 {
+    margin: 5px -8px;
+    width: 55px;
+    height: 55px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    /* #00a8ff */
+    transition: 0.2s ease-in-out;
+}
+
+.lord span {
+    padding-left: 13px;
+    color: grey;
+    font-weight: 100;
+    font-family: 'poppins';
+}
+
+.icon:hover,
+.icon2:hover {
+    scale: 1.2;
+}
+
+.main-awe {
+    padding: 15px 29px;
+}
+
+.main-awe i {
+    font-size: 18px;
+    color: gray;
+}
+
+.main-awe i:nth-child(1) {
+    font-weight: 500;
+}
+
+.line2 {
+    width: 90%;
+    height: 1.2px;
+    background-color: gray;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.like {
+    position: relative;
+}
+
+.nav .like,
+.comments,
+.share {
+    background-color: #DDD5F0;
+    padding: 12px 28px;
+    border-radius: 7px;
+    margin: 3px 7px;
+}
+
+.btnfacebook:hover {
+    background-color: #bdc3c7;
+    color: white;
+}
+
+#emoji-apper {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+}
+
+#emoji-apper img {
+    width: 120px;
+}
+
+.active {
+    color: #2e86de;
+}
+
+#emoji-section {
+    display: none;
+}
+
+.like:hover #emoji-section {
+    display: flex;
+}
+
+.mini-emoji-section {
+    position: absolute;
+    width: 300%;
+    height: 60px;
+    background-color: grey;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px;
+    border-radius: 28px;
+    top: -68px;
+    left: -2px;
+    display: flex;
+    align-items: center;
+}
+
+.mini-emoji-section .emoji {
+    width: 50px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.2s ease-in;
+}
+
+.emoji:hover {
+    transform: scale(1.2);
+}
+
+.emoji:nth-child(1) {
+    width: 80px;
+    margin-right: -10px;
+}
